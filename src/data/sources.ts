@@ -1,0 +1,81 @@
+import { Tags } from "./tags"
+
+export const sources = [
+	{
+		name: "Public Records",
+		maxPrice: 10,
+		minPrice: 5,
+		tags: [
+			Tags.ADDRESS,
+			Tags.PHONE,
+			Tags.EMAIL,
+			Tags.AGE,
+			Tags.MARRIED,
+			Tags.NAME,
+		],
+		source: ["County clerk", "Voter roll", "Utility company", "Court docket"],
+	},
+	{
+		name: "Voter Registration",
+		maxPrice: 20,
+		minPrice: 10,
+		tags: [Tags.REGISTERED, Tags.PARTY],
+		source: ["State voter roll"],
+	},
+	{
+		name: "DMV Records",
+		maxPrice: 20,
+		minPrice: 15,
+		tags: [Tags.VEHICLE, Tags.DRIVER],
+		source: ["State DMV"],
+	},
+	{
+		name: "Property Records",
+		maxPrice: 20,
+		minPrice: 30,
+		tags: [Tags.PROPERTY, Tags.LOANS],
+		source: ["County assesor"],
+	},
+	{
+		name: "Browsing Data",
+		maxPrice: 20,
+		minPrice: 30,
+		tags: [Tags.BROWSER, Tags.IP],
+		source: ["ISP"],
+	},
+	{
+		name: "Social Media",
+		maxPrice: 15,
+		minPrice: 30,
+		tags: [Tags.FOLLOWERS, Tags.POST],
+		source: ["Meta", "Twitter", "LinkedIN"],
+	},
+	{
+		name: "Location Data",
+		maxPrice: 40,
+		minPrice: 50,
+		tags: [Tags.LOCATION],
+		source: ["Life360"],
+	},
+	{
+		name: "Financial Data",
+		maxPrice: 50,
+		minPrice: 60,
+		tags: [Tags.CREDIT, Tags.SSN, Tags.LOANS],
+		source: ["Experian", "Equifax", "TransUnion"],
+	},
+	{
+		name: "Shopping Data",
+		maxPrice: 50,
+		minPrice: 60,
+		tags: [Tags.SHOPPING],
+		source: ["Walmart", "Target", "Meijer"],
+	},
+	{
+		name: "Health Data",
+		maxPrice: 70,
+		minPrice: 100,
+		tags: [Tags.HEALTH],
+		source: ["Better Health", "Smart Watch"],
+	},
+]
