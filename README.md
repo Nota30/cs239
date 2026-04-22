@@ -15,6 +15,11 @@ curl -fsSL https://bun.sh/install | bash
 powershell -c "irm bun.sh/install.ps1 | iex"
 ```
 
+## Cloning the Project
+```bash
+git clone https://github.com/Nota30/cs239.git
+```
+
 ## Installing dependencies
 ```bash
 bun install
