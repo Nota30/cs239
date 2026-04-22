@@ -1,17 +1,19 @@
 {
-  "name": "data",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@biomejs/biome": "2.4.12",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "@opentui/core": "^0.1.101",
-    "lmdb": "^3.5.4"
-  }
+	"name": "data",
+	"module": "src/index.ts",
+	"type": "module",
+	"scrips": {
+		"start": "bun run src/index.ts"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.12",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@opentui/core": "^0.1.101",
+		"lmdb": "^3.5.4"
+	}
 }
