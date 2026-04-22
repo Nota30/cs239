@@ -2,7 +2,7 @@
 	"name": "data",
 	"module": "src/index.ts",
 	"type": "module",
-	"scrips": {
+	"scripts": {
 		"start": "bun run src/index.ts"
 	},
 	"devDependencies": {
