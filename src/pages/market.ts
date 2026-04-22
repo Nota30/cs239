@@ -118,7 +118,8 @@ export async function marketScreen(
 		content: `
 		${sources[0]!.name}\n\n
 		Data contained: ${sources[0]!.tags.join(", ")}\n\n 
-		Source: ${sources[0]!.source[Math.floor(Math.random() * sources[0]!.source.length)]}`,
+		Source: ${sources[0]!.source[Math.floor(Math.random() * sources[0]!.source.length)]}\n\n
+		not-so-fun-fact:\n${sources[0]!.facts[0]}`,
 	})
 
 	detailsPanel.add(details)
@@ -132,6 +133,8 @@ export async function marketScreen(
 	body.add(dataPanel)
 	body.add(detailsPanel)
 	outerBox.add(body)
+
+	// ---------------------------------------------------- FOOTER ---------------------------------------------------
 
 	const footer = new BoxRenderable(client, {
 		width: "100%",
@@ -176,7 +179,8 @@ export async function marketScreen(
 		details.content = `
 		${sources[option.id]!.name}\n\n
 		Data contained: ${sources[option.id]!.tags.join(", ")}\n\n
-		Source: ${sources[option.id]!.source[Math.floor(Math.random() * sources[option.id]!.source.length)]}`
+		Source: ${sources[option.id]!.source[Math.floor(Math.random() * sources[option.id]!.source.length)]}\n\n
+		not-so-fun-fact:\n${sources[option.id]!.facts[0]}`
 	})
 
 	const keyhandler = client.keyInput
