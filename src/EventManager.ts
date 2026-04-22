@@ -50,7 +50,7 @@ export class EventManger {
 			if (key.name == "space") {
 				if (this.state!.id == "welcome") {
 					this.client.root.remove("welcome")
-					this.state = await guideScreen(this.client)
+					this.state = guideScreen(this.client)
 					this.client.root.add(this.state)
 				} else if (this.state!.id == "guide") {
 					this.client.root.remove("guide")
